@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Shop</title>
+	
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
+	<link href="style/variable.css" rel="stylesheet">
+	<link href="style/main.css" rel="stylesheet">
+
+	<link href="style/modal.css" rel="stylesheet">
+    <link href="style/form.css" rel="stylesheet">
+
+	<link href="style/page/contact.css" rel="stylesheet">
+
+	<link href="style/adaptive.css" rel="stylesheet">
+</head>
+<body>
+	<div class="app">
+		<header class="header">
+			<div class="header_small wrapper">
+				<div class="contact">
+					<ul>
+						<li class="mail"><a href="mailto:info@shop.com">info@shop.com</a></li>
+						<li class="tel">
+							<a href="tel:483 - 5553 - 996">483 - 5553 - 996</a>
+						</li>
+					</ul>
+				</div>
+				<div class="social">
+					<ul>
+						<a href="https://www.facebook.com/" target="_blank"><li class="icon-fb"></li></a>
+						<a href="https://twitter.com/" target="_blank"><li class="icon-tw"></li></a>
+						<a href="https://plus.google.com/" target="_blank"><li class="icon-g"></li></a>
+						<a href="https://www.instagram.com/" target="_blank"><li class="icon-in"></li></a>
+					</ul>
+				</div>
+			</div>
+
+			<hr />
+
+			<div class="wrapper">
+			<div class="header_big ">
+				<div class="logo">
+					<a href="index.html"><img src="image/Logo.png" alt="Shop"></a>
+				</div>
+
+				<nav>
+					<div class="menu-icon"><img src="image/ic_menu.svg" alt="menu" title="menu"></div>
+					<ul class="menu">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="product.html">Products</a></li>
+						<li><a href="hot-deals.html">Hot Deals</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+
+				<div class="details">
+					<div class="search-pole">
+						<div class="images">
+							<img src="image/search.png" alt="search">
+						</div>
+
+						<div class="form-search">
+							<input type="search">
+						</div>
+					</div>
+				
+					<div class="user" id="go"></div>
+
+					<div id="modal_form">
+      					<span id="modal_close">X</span> 
+      						<form>
+      							<h3>Sign in</h3>
+      							<p class="fieldset">
+      								<input type="email" placeholder="email" required>
+      							</p>
+      							<p class="fieldset">
+      								<input type="password" placeholder="password" required>
+      							</p>
+
+      							<p class="fieldset">
+      								<input type="checkbox" id="remember-me" checked>
+      								<label for="remember-me">Remember me</label>
+      							</p>
+      							<p class="fieldset">
+      								<input type="submit" value="enter">
+      							</p>
+      						</form>
+							
+							<hr>
+							
+							<div class="modal_form-footer">
+      							<p class="btn-forgotten"><a href="forgot.html" target="_blank">Forgot password</a></p>
+      							<p ><a href="sign.html" target="_blank">Sign out</a></p>
+      						</div>
+					</div>
+					<div id="overlay"></div>
+
+					<a class="cart" href="cart.html"><img src="image/cart.png" alt="cart"> <span id="total-cart-count" class="badge"></span></a>
+						
+			</div>
+			</div>
+		</header>
+
+		<div class="container-wrp">
+			<div class="contact-page">
+    			<div class="wrapper">
+    					<div class="navigator">
+    						<div class="path">
+    							<a href="index.html">Main</a> /
+    							<a href="contact.html">Contact</a>
+    						</div>
+    					</div>
+
+					<div class="title">
+    					<h2><span>Our</span> contact</h2>
+    				</div>
+
+    				
+    				<div class="contact">
+    					<div class="contact-text">
+    						<ul>
+    							<li>The contact person: Dresden</li>
+								<li>Address: Germany, Dresden region, Dresden, st.Buznika 5/1, office 100</li>
+								<li>Mail: <a href="mailto:shop@buy.com">shop@buy.com </a></li><br>
+								<li>Telephone: <a href="tel:+0442589631">+0442589631 </a></li><br>
+								<li>Work shedule: without days off, 9:00-18:00.</li>
+							</ul>
+    					</div>
+    					<div class="contact-map">
+    						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d160429.97105541072!2d13.63250473405614!3d51.07675004885859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4709cf29101ad6a9%3A0x421b1cb4288feb0!2z0JTRgNC10LfQtNC10L0sINCT0LXRgNC80LDQvdC40Y8!5e0!3m2!1sru!2sua!4v1512551051373"  frameborder="0"  allowfullscreen></iframe>
+    					</div>
+    				</div>
+
+    				<div class="form-order">
+    					<div class="title"> 
+    						<h2><span>Contact</span></h2>
+    					</div>
+
+    					<form id="form-order">
+    						<input type="text" name="name" placeholder="Name"> <br>
+    						<input type="tel" name="phone" placeholder="Phone"> <br>
+    						<input type="email" name="email" placeholder="Email"> <br>
+
+    						<textarea name="request" placeholder="Request"></textarea> <br>
+    						<input type="submit" value="Send" >
+    					</form>
+    				</div>
+    		</div>
+
+		</div>
+
+		<footer>
+    		<div class="wrapper footer">
+    			<div class="footer-logo">
+    				<a href="index.html"><img src="image/logo.png" alt="shopy"></a>
+    				<p>shopy &#9400; your copy right here</p>
+    			</div>
+
+			<div class="footer-menu-wrp">
+    			<div class="footer-menu">
+    				<ul>
+    					<li><a href="#">about us</a></li>
+    					<li><a href="#">contact us</a></li>
+    					<li><a href="#">support</a></li>
+    				</ul>
+    			</div>
+    			<div class="footer-menu">
+    				<ul>
+    					<li><a href="#">our feed</a></li>
+    					<li><a href="#">terms and conditions</a></li>
+    					<li><a href="#">our privacy</a></li>
+    				</ul>
+    			</div>
+    			<div class="footer-menu">
+    				<ul>
+    					<li><a href="#">join us</a></li>
+    					<li><a href="#">live support</a></li>
+    				</ul>
+    			</div>
+			</div>
+    			<div class="payment">
+    				<h4>Payment Methods</h4>
+    				<img src="image/payment.png" alt="payment">
+    			</div>
+    		</div>
+    	</footer>
+	</div>
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/menu.js"></script>
+	<script src="js/popup.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,11 @@
+:root{
+	--white: #ffffff;
+	--main: #3c4751;
+	--orange: #ff5912;
+	--grey: #f4f6f8;
+
+	--offset-XS: 11px;
+	--offset-S: 22px;
+	--offset-M: 33px;
+	--offset-L: 44px;
+}

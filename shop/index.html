@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Shop</title>
+	
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
+	<link href="style/variable.css" rel="stylesheet">
+	<link href="style/main.css" rel="stylesheet">
+	<link href="style/adaptive.css" rel="stylesheet">
+
+	<link href="style/modal.css" rel="stylesheet">
+	<link href="style/form.css" rel="stylesheet">
+
+</head>
+<body>
+	<div class="app">
+		<header class="header">
+			<div class="header_small wrapper">
+				<div class="contact">
+					<ul>
+						<li class="mail"><a href="mailto:info@shop.com">info@shop.com</a></li>
+						<li class="tel">
+							<a href="tel:483 - 5553 - 996">483 - 5553 - 996</a>
+						</li>
+					</ul>
+				</div>
+				<div class="social">
+					<ul>
+						<a href="https://www.facebook.com/" target="_blank"><li class="icon-fb"></li></a>
+						<a href="https://twitter.com/" target="_blank"><li class="icon-tw"></li></a>
+						<a href="https://plus.google.com/" target="_blank"><li class="icon-g"></li></a>
+						<a href="https://www.instagram.com/" target="_blank"><li class="icon-in"></li></a>
+					</ul>
+				</div>
+			</div>
+
+			<hr />
+
+			<div class="wrapper">
+			<div class="header_big ">
+				<div class="logo">
+					<a href="index.html"><img src="image/Logo.png" alt="Shop"></a>
+				</div>
+
+				<nav>
+					<div class="menu-icon"><img src="image/ic_menu.svg" alt="menu" title="menu"></div>
+					<ul class="menu">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="product.html">Products</a></li>
+						<li><a href="hot-deals.html">Hot Deals</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+
+				<div class="details">
+					<div class="search-pole">
+						<div class="images">
+							<img src="image/search.png" alt="search">
+						</div>
+
+						<div class="form-search">
+							<input type="search">
+						</div>
+					</div>
+				
+					<div class="user" id="go"></div>
+
+					<div id="modal_form">
+      					<span id="modal_close">X</span> 
+      						<form>
+      							<h3>Sign in</h3>
+      							<p class="fieldset">
+      								<input type="email" placeholder="email" required>
+      							</p>
+      							<p class="fieldset">
+      								<input type="password" placeholder="password" required>
+      							</p>
+
+      							<p class="fieldset">
+      								<input type="checkbox" id="remember-me" checked>
+      								<label for="remember-me">Remember me</label>
+      							</p>
+      							<p class="fieldset">
+      								<input type="submit" value="enter">
+      							</p>
+      						</form>
+							
+							<hr>
+							
+							<div class="modal_form-footer">
+      							<p class="btn-forgotten"><a href="forgot.html" target="_blank">Forgot password</a></p>
+      							<p ><a href="sign.html" target="_blank">Sign out</a></p>
+      						</div>
+					</div>
+					<div id="overlay"></div>
+
+					<a class="cart" href="cart.html"><img src="image/cart.png" alt="cart"> <span id="total-cart-count" class="badge"></a>
+						
+			</div>
+			</div>
+		</header>
+
+		<div class="container-wrp">
+		<div id="block-for-slider">
+        	<div id="viewport">
+            <ul id="slidewrapper">
+                <li class="slide">
+                	<img src="image/slider.png" alt="2" class="slide-img">
+
+                	<div class="slider-text">
+            		<h1 class="category">FULL WINTER KIT</h1>
+            		<h3 class="subcategory">Half Jacket + Skiny Trousers + Boot leather</h3>
+            		<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
+
+            		<div class="price">
+            			<p>Price : 120$</p>
+            			<p class="buy"> <a href="cart.html">Order-Now</a></p>
+            		</div>
+            	</div>
+
+                </li>
+
+                 <li class="slide">
+                	<img src="image/slider.png" alt="2" class="slide-img">
+
+                	<div class="slider-text">
+            		<h1 class="category"> WINTER </h1>
+            		<h3 class="subcategory">Boot leather</h3>
+            		<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
+
+            		<div class="price">
+            			<p>Price : 100$</p>
+            			<p class="buy"><a href="cart.html"> Order-Now</a></p>
+            		</div>
+            	</div>
+
+                </li>
+
+                 <li class="slide">
+                	<img src="image/slider.png" alt="2" class="slide-img">
+
+                	<div class="slider-text">
+            		<h1 class="category"> WINTER KIT</h1>
+            		<h3 class="subcategory">Half Jacket</h3>
+            		<p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry </p>
+
+            		<div class="price">
+            			<p>Price : 20$</p>
+            			<p class="buy"><a href="cart.html"> Order-Now</a></p>
+            		</div>
+            	</div>
+
+                </li>
+               
+            </ul>
+
+           <div class="wrapper">
+            	<ul id="nav-btns">
+                	<li class="slide-nav-btn"></li>
+                	<li class="slide-nav-btn"></li>
+                	<li class="slide-nav-btn"></li>
+            	</ul>
+
+            	
+        	</div>
+        	</div>
+    	</div>
+
+    	<div class="arivals">
+    		<div class="wrapper">
+    		<div class="title">
+    			<h2><span>New</span> Arrivals</h2>
+    			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+    		</div>
+
+    		<div class="product page">
+    			<div data-num=1 class="product-item num">
+    				<div class="product-item_image">
+    					<a href="product-item_cloak.html"><img src="image/catalog/product.png" alt="product"></a>   </div>
+    				<div class="product-item_name">
+    					<h3>Reebok Track Jacket</h3>
+    				</div>
+    				<div class="product-item_price">
+    					<p>100$</p>
+    				</div>
+    			</div>
+
+    			<div data-num=2 class="product-item num">
+    				<div class="product-item_image">
+    					<a href="product-item_cloak.html"><img src="image/catalog/product2.png" alt="product"></a>
+    				</div>
+    				<div class="product-item_name">
+    					<h3>Reebok Track Jacket</h3>
+    				</div>
+    				<div class="product-item_price">
+    					<p>100$</p>
+    				</div>
+    			</div>
+
+    			<div data-num=3 class="product-item num">
+    				<div class="product-item_image">
+    					<a href="product-item_cloak.html"><img src="image/catalog/product3.png" alt="product"></a>
+    				</div>
+    				<div class="product-item_name">
+    					<h3>Reebok Track Jacket</h3>
+    				</div>
+    				<div class="product-item_price">
+    					<p>100$</p>
+    				</div>
+    			</div>
+
+    			<div data-num=4 class="product-item num">
+    				<div class="product-item_image">
+    					<a href="product-item_cloak.html"><img src="image/catalog/product3.png" alt="product"></a>
+    				</div>
+    				<div class="product-item_name">
+    					<h3>Reebok Track Jacket</h3>
+    				</div>
+    				<div class="product-item_price">
+    					<p>100$</p>
+    				</div>
+    			</div>
+
+    			
+    			<div data-num=5 class="product-item num">
+    				<div class="product-item_image">
+    					<a href="product-item_cloak.html"><img src="image/catalog/product3.png" alt="product"></a>
+    				</div>
+    				<div class="product-item_name">
+    					<h3>Reebok Track Jacket</h3>
+    				</div>
+    				<div class="product-item_price">
+    					<p>100$</p>
+    				</div>
+    			</div>
+
+    			<div data-num=6 class="product-item num">
+    				<div class="product-item_image">
+    					<a href="product-item_cloak.html"><img src="image/catalog/product3.png" alt="product"></a>
+    				</div>
+    				<div class="product-item_name">
+    					<h3>Reebok Track Jacket</h3>
+    				</div>
+    				<div class="product-item_price">
+    					<p>100$</p>
+    				</div>
+    			</div>
+
+    			<div data-num=7 class="product-item num">
+    				<div class="product-item_image">
+    					<a href="product-item_cloak.html"><img src="image/catalog/product.png" alt="product"></a>    			</div>
+    				<div class="product-item_name">
+    					<h3>Reebok Track Jacket</h3>
+    				</div>
+    				<div class="product-item_price">
+    					<p>100$</p>
+    				</div>
+    			</div>
+
+    			<div data-num=8 class="product-item num">
+    				<div class="product-item_image">
+    					<a href="product-item_cloak.html"><img src="image/catalog/product2.png" alt="product"></a>
+    				</div>
+    				<div class="product-item_name">
+    					<h3>Reebok Track Jacket</h3>
+    				</div>
+    				<div class="product-item_price">
+    					<p>100$</p>
+    				</div>
+    			</div>
+
+    			<div data-num=9 class="product-item num">
+    				<div class="product-item_image">
+    					<a href="product-item_cloak.html"><img src="image/catalog/product3.png" alt="product"></a>
+    				</div>
+    				<div class="product-item_name">
+    					<h3>Reebok Track Jacket</h3>
+    				</div>
+    				<div class="product-item_price">
+    					<p>100$</p>
+    				</div>
+    			</div>
+
+    			<div data-num=10 class="product-item num">
+    				<div class="product-item_image">
+    					<a href="product-item_cloak"><img src="image/catalog/product3.png" alt="product"></a>
+    				</div>
+    				<div class="product-item_name">
+    					<h3>Reebok Track Jacket</h3>
+    				</div>
+    				<div class="product-item_price">
+    					<p>100$</p>
+    				</div>
+    			</div>
+    		</div>
+
+    		<div class="paginator" onclick="pagination(event)"></div>
+
+
+    		<div class="row">
+    			<div class="sale">
+    				<div class="sale-logo">
+    					<div class="squared "></div>
+    					<div class="squared squar-rotate"></div>
+    					<h4>Sale <span>50%</span></h4>
+    				</div>
+
+    				<div class="sale-title">
+    					<h3>Full winter kit</h3>
+    					<p>Half Jacket + Skiny Trousers + Boot leather</p>
+    				</div>
+
+    				<div class="sale-bucket">
+    					<img src="image/busket.png" alt="bucket">
+    					<h4>120<span>$</span></h4>
+    				</div>
+    			</div>
+    			<div class="adv">
+    				<h4 class="adv-title">adv <span>area</span></h4>
+    				<div class="adv-size">470 x 100</div>
+    			</div>
+    		</div>
+
+    		<div class="title">
+    			<h2><span>Best</span> Sales</h2>
+    			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+    		</div>
+
+    		<div class="product-sale-bg">
+    			<div class="product-sale">
+    				<div class="product-sale_picture">
+    					<img src="image/product.png" alt="product">
+    				</div>
+
+    				<div class="product-sale_title">
+    					<h3>Reebok Track Jacket</h3>
+    					
+    					<dl class="star-rating">
+ 
+  							<dd>
+    							<ol>
+      							<li><a href="#" class="star1"></a></li>
+      							<li><a href="#" class="star2"></a></li>
+      							<li class="current" style="width:60px" ><a href="#" class="star3"></a></li>
+      							<li ><a href="#" class="star4"></a></li>
+      							<li><a href="#" class="star5"></a></li>
+    							</ol>
+  							</dd>
+						</dl>
+
+						<div class="price">100$</div>
+    				</div>
+    			</div>
+
+    			<div class="product-sale">
+    				<div class="product-sale_picture">
+    					<img src="image/product.png" alt="product">
+    				</div>
+
+    				<div class="product-sale_title">
+    					<h3>Reebok Track Jacket</h3>
+    					
+    					<dl class="star-rating">
+ 
+  							<dd>
+    							<ol>
+      							<li><a href="#" class="star1"></a></li>
+      							<li><a href="#" class="star2"></a></li>
+      							<li class="current" style="width:60px" ><a href="#" class="star3"></a></li>
+      							<li ><a href="#" class="star4"></a></li>
+      							<li><a href="#" class="star5"></a></li>
+    							</ol>
+  							</dd>
+						</dl>
+
+						<div class="price">100$</div>
+
+    				</div>
+    			</div>
+
+    			<div class="product-sale">
+    				<div class="product-sale_picture">
+    					<img src="image/product.png" alt="product">
+    				</div>
+
+    				<div class="product-sale_title">
+    					<h3>Reebok Track Jacket</h3>
+    					
+    					<dl class="star-rating">
+ 
+  							<dd>
+    							<ol>
+      							<li><a href="#" class="star1"></a></li>
+      							<li><a href="#" class="star2"></a></li>
+      							<li class="current" style="width:60px" ><a href="#" class="star3"></a></li>
+      							<li ><a href="#" class="star4"></a></li>
+      							<li><a href="#" class="star5"></a></li>
+    							</ol>
+  							</dd>
+						</dl>
+
+						<div class="price">100$</div>
+
+    				</div>
+    			</div>
+    		</div>
+
+    		<div class="letter">
+    			<div class="letter-title">
+    				<h3>News Letter
+    				<span>join us now to get all news and special offers</span></h3>
+    			</div>
+
+    			<form>
+    				<input type="mail" placeholder="type your email here" required>
+
+    				<input type="submit" value="join us">
+    			</form>
+    		</div>
+    		</div>
+    	</div>
+		</div>
+
+    	<footer>
+    		<div class="wrapper footer">
+    			<div class="footer-logo">
+    				<a href="index.html"><img src="image/logo.png" alt="shopy"></a>
+    				<p>shopy &#9400; your copy right here</p>
+    			</div>
+
+			<div class="footer-menu-wrp">
+    			<div class="footer-menu">
+    				<ul>
+    					<li><a href="#">about us</a></li>
+    					<li><a href="#">contact us</a></li>
+    					<li><a href="#">support</a></li>
+    				</ul>
+    			</div>
+    			<div class="footer-menu">
+    				<ul>
+    					<li><a href="#">our feed</a></li>
+    					<li><a href="#">terms and conditions</a></li>
+    					<li><a href="#">our privacy</a></li>
+    				</ul>
+    			</div>
+    			<div class="footer-menu">
+    				<ul>
+    					<li><a href="#">join us</a></li>
+    					<li><a href="#">live support</a></li>
+    				</ul>
+    			</div>
+			</div>
+    			<div class="payment">
+    				<h4>Payment Methods</h4>
+    				<img src="image/payment.png" alt="payment">
+    			</div>
+    		</div>
+
+    	</footer>
+	</div>
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/menu.js"></script>
+	<script src="js/popup.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="js/pagination.js"></script>
+</body>
+</html>

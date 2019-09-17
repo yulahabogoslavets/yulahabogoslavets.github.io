@@ -1,0 +1,78 @@
+.product-block{
+	display: grid;
+	grid-template-columns: 23% 74%;
+	grid-gap: var(--offset-M);
+}
+
+.siderbar-icon img {
+	display: none;
+}
+
+.container .product {
+	margin: 0;
+}
+
+.container .product .product-item{
+	margin-bottom: var(--offset-S);
+}
+
+.filter{
+	background: var(--white);
+	padding: var(--offset-L) var(--offset-L) var(--offset-S) var(--offset-L);
+	margin-bottom: var(--offset-M);
+	text-align: left;
+}
+
+.filter h4 {
+	color: var(--orange);
+	font-weight: 700;
+	margin-bottom: var(--offset-S);
+	font-size: 112%;
+}
+
+.categories li{
+	line-height: 3.1;
+}
+
+.categories li a:hover{
+	color: var(--orange);
+}
+
+.price-block{
+	height: 230px;
+}
+/*filter price */
+
+/**/
+
+.checkbox {
+	position: relative;
+	padding-left: var(--offset-S);
+	margin-top: var(--offset-M);
+	margin-bottom: var(--offset-XS);
+}
+.checkbox input[type=checkbox] {
+	display: none;
+}
+.checkbox label:after {
+	content: '';
+	display: block;
+	height: var(--offset-XS);
+	width: var(--offset-XS);
+	border: 1px solid #939598;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.checkbox input[type=checkbox]:checked + label:after {
+	outline: 4px solid var(--orange);
+	border: 1px solid var(--white);
+	width: var(--offset-XS);
+	height: var(--offset-XS);
+}
+
+.checkbox label:hover,
+.checkbox label:checked{
+	color: var(--orange);
+	cursor: pointer;
+}

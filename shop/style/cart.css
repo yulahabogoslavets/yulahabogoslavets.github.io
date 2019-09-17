@@ -1,0 +1,40 @@
+table {
+    border-spacing: 0 10px;
+    width: 100%;
+    border:1px solid var(--grey);
+}
+th {
+    padding: 10px 20px;
+    color: var(--orange);
+    border-right: 2px solid; 
+    font-size: 0.9em;
+}
+th:first-child {
+    text-align: left;
+}
+th:last-child {
+    border-right: none;
+}
+td {
+    vertical-align: middle;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    border-top: 2px solid var(--grey);
+    border-bottom: 2px solid var(--grey);
+    border-right: 2px solid var(--grey);
+}
+
+.btn{
+    background: var(--orange);
+    border: none;
+    border-radius: 10%;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.btn a {
+     color: var(--white);
+}

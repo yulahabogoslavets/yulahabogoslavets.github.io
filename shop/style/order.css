@@ -1,0 +1,126 @@
+.form-group{
+	display: flex;
+}
+
+.alert{
+	padding: 15px;
+	margin-bottom: 20px;
+	border-radius: 4px;
+	border: 1px solid transparent;
+}
+.alert-info{
+	color: #31708f;
+	background-color: #d9edf7;
+	border-color: #bce8f1;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+.col-sm-2{
+	width: 16.666666666667%;
+}
+
+.col-sm-6 {
+	width: 50%;
+}
+
+.col-sm-offset-2 {
+	margin-left: 16.666666666667%;
+}
+
+.control-label{
+	text-align: right;
+	margin-right: 20px;
+	padding-top: 7px;
+}
+
+.form-control {
+	display: block;
+	width: 100%;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.4;
+	color: #000;
+	background-color: var(--white);
+	border: 1px solid var(--grey);
+	border-radius: 4px;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+
+
+
+.btn{
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin-left: 20px;
+}
+
+.btn-primary {
+	color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.hidden {
+	display: none!important;
+}
+
+.alert-success {
+	color: #3c763d;
+	background: #dff0d8;
+	border-color: #d6e9c6;
+}
+
+.alert-danger {
+	color: #a94442;
+	background-color: #f2dede;
+	border-color: #ebccd1;
+}
+
+button.close {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+}
+
+.close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
+
+.form-group input{
+	width: 100%;
+	margin: 0;
+}
+
+.form-group input[type="email"] {
+	background-image: none;
+}

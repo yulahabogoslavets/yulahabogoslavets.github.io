@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Shop</title>
+	
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
+	<link href="style/variable.css" rel="stylesheet">
+	<link href="style/main.css" rel="stylesheet">
+    <link href="style/modal.css" rel="stylesheet">
+    <link href="style/form.css" rel="stylesheet">
+
+	<link href="style/cart.css" rel="stylesheet">
+
+    <link href="style/adaptive.css" rel="stylesheet">
+</head>
+<body>
+	<div class="app">
+		<header class="header">
+            <div class="header_small wrapper">
+                <div class="contact">
+                    <ul>
+                        <li class="mail"><a href="mailto:info@shop.com">info@shop.com</a></li>
+                        <li class="tel">
+                            <a href="tel:483 - 5553 - 996">483 - 5553 - 996</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <ul>
+                        <a href="https://www.facebook.com/" target="_blank"><li class="icon-fb"></li></a>
+                        <a href="https://twitter.com/" target="_blank"><li class="icon-tw"></li></a>
+                        <a href="https://plus.google.com/" target="_blank"><li class="icon-g"></li></a>
+                        <a href="https://www.instagram.com/" target="_blank"><li class="icon-in"></li></a>
+                    </ul>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="wrapper">
+            <div class="header_big ">
+                <div class="logo">
+                    <a href="index.html"><img src="image/Logo.png" alt="Shop"></a>
+                </div>
+
+                <nav>
+                    <div class="menu-icon"><img src="image/ic_menu.svg" alt="menu" title="menu"></div>
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="hot-deals.html">Hot Deals</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="details">
+                    <div class="search-pole">
+                        <div class="images">
+                            <img src="image/search.png" alt="search">
+                        </div>
+
+                        <div class="form-search">
+                            <form>
+                                <input type="search">
+                            </form>
+                        </div>
+                    </div>
+
+                
+                    <div class="user" id="go"></div>
+
+                    <div id="modal_form"><!-- Сaмo oкнo --> 
+                        <span id="modal_close">X</span> <!-- Кнoпкa зaкрыть --> 
+                            <!-- Тут любoе сoдержимoе -->
+                            <form>
+                                <h3>Sign in</h3>
+                                <p class="fieldset">
+                                    <input type="email" placeholder="email" required>
+                                </p>
+                                <p class="fieldset">
+                                    <input type="password" placeholder="password" required>
+                                </p>
+
+                                <p class="fieldset">
+                                    <input type="checkbox" id="remember-me" checked>
+                                    <label for="remember-me">Remember me</label>
+                                </p>
+                                <p class="fieldset">
+                                    <input type="submit" value="enter">
+                                </p>
+                            </form>
+                            
+                            <hr>
+                            
+                            <div class="modal_form-footer">
+                                <p class="btn-forgotten"><a href="forgot.html" target="_blank">Forgot password</a></p>
+                                <p ><a href="sign.html" target="_blank">Sign out</a></p>
+                            </div>
+                    </div>
+                    <div id="overlay"></div><!-- Пoдлoжкa -->
+
+
+                    <a class="cart" href="cart.html"><img src="image/cart.png" alt="cart"> <span id="total-cart-count" class="badge"></a>
+                        
+            </div>
+            </div>
+        </header>
+
+		<div class="container-wrp wrapper">
+		
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Article</th>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th>Amount</th>
+                        <th>Total</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="cart">
+                    <tr><td colspan="6"></td></tr>
+                </tbody>
+            </table>
+        </div>
+        <br />
+        <div>Итого: <span id="total-cart-summa">0</span> $</div>
+        <br />
+        <a href="order.html"><input type="submit" id="ordrer" class="btn" value="to make in order"></a>
+				
+		</div>
+
+		<footer>
+    		<div class="wrapper footer">
+    			<div class="footer-logo">
+    				<a href="index.html"><img src="image/logo.png" alt="shopy"></a>
+    				<p>shopy &#9400; your copy right here</p>
+    			</div>
+
+			<div class="footer-menu-wrp">
+    			<div class="footer-menu">
+    				<ul>
+    					<li><a href="#">about us</a></li>
+    					<li><a href="#">contact us</a></li>
+    					<li><a href="#">support</a></li>
+    				</ul>
+    			</div>
+    			<div class="footer-menu">
+    				<ul>
+    					<li><a href="#">our feed</a></li>
+    					<li><a href="#">terms and conditions</a></li>
+    					<li><a href="#">our privacy</a></li>
+    				</ul>
+    			</div>
+    			<div class="footer-menu">
+    				<ul>
+    					<li><a href="#">join us</a></li>
+    					<li><a href="#">live support</a></li>
+    				</ul>
+    			</div>
+			</div>
+    			<div class="payment">
+    				<h4>Payment Methods</h4>
+    				<img src="image/payment.png" alt="payment">
+    			</div>
+    		</div>	
+    	</footer>
+	</div>
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/menu.js"></script>
+    <script src="js/popup.js"></script>
+	
+	<script src="js/vendor/underscore.min.js"></script>
+	<script src="js/modules/catalog.js"></script>
+	<script src="js/modules/cart.js"></script>
+	<script src="js/modules/main.js"></script>
+
+	 <script id="cart-template" type="text/template">
+        <% _.each(goods, function(good) { %>
+            <tr class="cart-item js-cart-item" data-id="<%= good.id %>">
+                <td><%= good.id %></td>
+                <td><%- good.name %></td>
+                <td><%= good.price %> руб.</td>
+                <td>
+                    <span 
+                        class="cart-item__btn-dec-count js-change-count" 
+                        title="Уменьшить на 1" 
+                        data-id="<%= good.id %>" 
+                        data-delta="-1"
+                    >
+                        <span class="glyphicon glyphicon-minus"></span>
+                    </span>
+                    <span class="js-count"><%= good.count %></span>
+                    <span 
+                        class="cart-item__btn-inc-count js-change-count" 
+                        title="Увеличить на 1" 
+                        data-id="<%= good.id %>" 
+                        data-delta="1"
+                    >
+                        <span class="glyphicon glyphicon-plus"></span>
+                    </span>
+                </td>
+                <td><span class="js-summa"><%= good.count * good.price %></span> руб.</td>
+                <td>
+                    <span class="cart-item__btn-remove js-remove-from-cart" title="Удалить из корзины" data-id="<%= good.id %>">
+                        <span class="glyphicon glyphicon-remove"></span>                                
+                    </span>
+                </td>
+            </tr>
+        <% }); %>
+    </script>
+
+   
+
+</body>
+</html>

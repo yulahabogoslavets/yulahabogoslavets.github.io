@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shop</title>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
+    <link href="style/variable.css" rel="stylesheet">
+    <link href="style/main.css" rel="stylesheet">
+    <link href="style/modal.css" rel="stylesheet">
+    <link href="style/form.css" rel="stylesheet">
+    
+    <link href="style/order.css" rel="stylesheet">
+
+    <link href="style/adaptive.css" rel="stylesheet">
+
+</head>
+<body data-page="order">
+    <div class="app">
+       <header class="header">
+            <div class="header_small wrapper">
+                <div class="contact">
+                    <ul>
+                        <li class="mail"><a href="mailto:info@shop.com">info@shop.com</a></li>
+                        <li class="tel">
+                            <a href="tel:483 - 5553 - 996">483 - 5553 - 996</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social">
+                    <ul>
+                        <a href="https://www.facebook.com/" target="_blank"><li class="icon-fb"></li></a>
+                        <a href="https://twitter.com/" target="_blank"><li class="icon-tw"></li></a>
+                        <a href="https://plus.google.com/" target="_blank"><li class="icon-g"></li></a>
+                        <a href="https://www.instagram.com/" target="_blank"><li class="icon-in"></li></a>
+                    </ul>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="wrapper">
+            <div class="header_big ">
+                <div class="logo">
+                    <a href="index.html"><img src="image/Logo.png" alt="Shop"></a>
+                </div>
+
+                <nav>
+                    <div class="menu-icon"><img src="image/ic_menu.svg" alt="menu" title="menu"></div>
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="hot-deals.html">Hot Deals</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="details">
+                    <div class="search-pole">
+                        <div class="images">
+                            <img src="image/search.png" alt="search">
+                        </div>
+
+                        <div class="form-search">
+                            <form>
+                                <input type="search">
+                            </form>
+                        </div>
+                    </div>
+
+                
+                    <div class="user" id="go"></div>
+
+                    <div id="modal_form"><!-- Сaмo oкнo --> 
+                        <span id="modal_close">X</span> <!-- Кнoпкa зaкрыть --> 
+                            <!-- Тут любoе сoдержимoе -->
+                            <form>
+                                <h3>Sign in</h3>
+                                <p class="fieldset">
+                                    <input type="email" placeholder="email" required>
+                                </p>
+                                <p class="fieldset">
+                                    <input type="password" placeholder="password" required>
+                                </p>
+
+                                <p class="fieldset">
+                                    <input type="checkbox" id="remember-me" checked>
+                                    <label for="remember-me">Remember me</label>
+                                </p>
+                                <p class="fieldset">
+                                    <input type="submit" value="enter">
+                                </p>
+                            </form>
+                            
+                            <hr>
+                            
+                            <div class="modal_form-footer">
+                                <p class="btn-forgotten"><a href="forgot.html" target="_blank">Forgot password</a></p>
+                                <p ><a href="sign.html" target="_blank">Sign out</a></p>
+                            </div>
+                    </div>
+                    <div id="overlay"></div><!-- Пoдлoжкa -->
+
+
+                    <a class="cart" href="cart.html"><img src="image/cart.png" alt="cart"> <span id="total-cart-count" class="badge"></a>
+                        
+            </div>
+            </div>
+        </header>
+
+    <div class="container-wrp wrapper">
+        <div id="order-message" class="alert alert-info"></div>
+        <br />
+        <form id="order-form" class="form-horizontal" role="form">
+            <div class="form-group">
+                <label for="input-name" class="col-sm-2 control-label">Your name *</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="input-name" name="name" placeholder="Your name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="input-email" class="col-sm-2 control-label">Email *</label>
+                <div class="col-sm-6">
+                    <input type="email" class="form-control" id="input-email" name="email" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="input-phone" class="col-sm-2 control-label">Telephone</label>
+                <div class="col-sm-6">
+                    <input type="number" class="form-control" id="input-phone" name="phone" placeholder="Telephone">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Delivery method</label>
+                <div class="col-sm-6">
+                    <input type="hidden" name="delivery_type" id="delivery-type" value="" />
+                    <input type="hidden" name="delivery_summa" id="delivery-summa" value="0" />
+                    <input type="hidden" name="full_summa" id="full-summa" value="0" />
+                    <div class="radio">
+                        <label><input type="radio" name="delivery" class="js-delivery-type" data-type="Pickup (free of charge)" data-summa="0" checked>Pickup (free of charge)</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="delivery" class="js-delivery-type" data-type="within Germany" data-summa="20">Within Germany (20$)</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="delivery" class="js-delivery-type" data-type="delivery by mail of Germany" data-summa="30">Delivery by mail of Germany (30$)</label>
+                    </div>
+                    <br />
+                    <div id="alert-delivery" class="alert alert-info"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="input-address" class="col-sm-2 control-label">Delivery address</label>
+                <div class="col-sm-6">
+                    <textarea class="form-control" id="input-address" name="address" placeholder="Delivery address" row="3"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="input-message" class="col-sm-2 control-label">Message</label>
+                <div class="col-sm-6">
+                    <textarea class="form-control" id="input-message" name="message" placeholder="additional informanition" row="3"></textarea>
+                    <br />
+                    <div id="alert-validation" class="alert alert-danger hidden">
+                        <button type="button" class="close js-close-alert">&times;</button>
+                        <strong>Error!</strong> Fill in the required fields marked with *
+                    </div>
+                    <div id="alert-order-done" class="alert alert-success hidden">
+                        <button type="button" class="close js-close-alert">&times;</button>
+                        <strong>Thanks for your order!</strong> Soon we will contact you.
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-6">
+                    <button id="order-btn" type="submit" class="btn btn-primary">Send an order</button>
+                </div>
+            </div>
+        </form>
+    </div>
+        <footer>
+            <div class="wrapper footer">
+                <div class="footer-logo">
+                    <a href="index.html"><img src="image/logo.png" alt="shopy"></a>
+                    <p>shopy &#9400; your copy right here</p>
+                </div>
+
+            <div class="footer-menu-wrp">
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">contact us</a></li>
+                        <li><a href="#">support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="#">our feed</a></li>
+                        <li><a href="#">terms and conditions</a></li>
+                        <li><a href="#">our privacy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="#">join us</a></li>
+                        <li><a href="#">live support</a></li>
+                    </ul>
+                </div>
+            </div>
+                <div class="payment">
+                    <h4>Payment Methods</h4>
+                    <img src="image/payment.png" alt="payment">
+                </div>
+            </div>  
+        </footer>
+    </div>
+
+    <script id="order-message-template" type="text/template">
+        <% if (count !== 0) { %>
+            In your shopping cart <%= count %> goods for a total amount <%= summa %> dollars.
+            Fill out form below and click submit order.
+        <% } else { %>
+            Your backet is empty. Before ordering, add at least one product to the shopping cart.
+        <% } %>
+    </script>
+
+    <script src="js/vendor/jquery.min.js" type="text/javascript"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/popup.js"></script>
+
+    <script src="js/vendor/jquery.cookie.js" type="text/javascript"></script>
+    <script src="js/vendor/underscore.min.js" type="text/javascript"></script>
+    <script src="js/modules/cart.js" type="text/javascript"></script>
+    <script src="js/modules/order.js" type="text/javascript"></script>
+    <script src="js/modules/compare.js" type="text/javascript"></script>
+    <script src="js/modules/main.js" type="text/javascript"></script>
+</body>
+</html>
