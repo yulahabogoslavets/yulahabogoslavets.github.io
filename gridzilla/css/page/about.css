@@ -1,0 +1,47 @@
+
+.about{
+	margin-top: var(--offset-S);
+}
+
+.about h2{
+	text-align: center;
+	font-weight: 700;
+	font-size: 1.5em;
+	margin-bottom: var(--offset-S);
+}
+
+.about p{
+	margin-top: var(--offset-XS);
+	margin-bottom: var(--offset-XS);
+	line-height: 1.2;
+}
+
+.paragraph-two {
+	display: flex;
+	justify-content: space-between;
+}
+
+.paragraph-two_img{
+	margin-top: var(--offset-XS);
+	margin-right: var(--offset-S);
+	width: 30%;
+	object-fit: cover;	
+}
+
+.first-letter:first-letter{
+	color: var(--orange);
+	font-size: 2em;
+	float: left;
+	position: relative;
+}
+
+.quote:before {
+	content: "\201c";
+	color: var(--orange);
+	font-size: 3em;
+	float: left;
+	position: relative;
+	margin-right: 1rem;
+	margin-top: -0.5rem;
+
+}
