@@ -164,7 +164,7 @@ nav ul li a:hover{
 .skills-content progress{
 	width: 100%;
 	height: 5px;
-	background: var(--green);
+	background: var(--bg-green);
 }
 
 /*numbers*/
