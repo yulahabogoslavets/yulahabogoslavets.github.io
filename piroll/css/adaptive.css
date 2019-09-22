@@ -1,0 +1,44 @@
+@media screen and (max-width: 768px){
+	.container{
+		padding: 0;
+	}
+
+	header nav ul{
+		display: none;
+	}
+
+	.menu-mob{
+		display: block;
+		width: 31px;
+		height: 28px;
+		position: fixed;
+		right: 1.5em;
+		top: 1.5em;
+	}
+
+	.menu-mob::before{
+		content: url("../images/menu.svg");
+	}
+	nav.open .menu-mob::before{
+		content: url("../images/m-close.svg");
+	}
+
+	header nav.open{
+		width: 60%;
+	}
+	header nav.open ul{
+		display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+	}
+	header nav.open ul li{
+		margin-bottom: 1.2em;
+	}
+
+
+	.banner-description{
+		width: auto;
+		text-align: center;
+	}
+
+}
