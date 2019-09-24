@@ -188,18 +188,39 @@ nav ul li a:hover{
 
 /*work*/
 .work{
-	background: #dddddd;
+	
 	padding-bottom: 20px;
 	/*min-height: 70vh;*/
 }
 .row{
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(2, 300px);
+	grid-template-rows: repeat(2, 25em);
 }
 
 .row div{
-	border: 1px solid black;
+
+	border-bottom: 1px solid black;
+}
+.row div:nth-child(2n+1){
+	background: #838383;
+}
+.row div:nth-of-type(even){
+	background: #dddddd;
+}
+
+.row div p{
+	height: 20em;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	font-size: 1.4em;
+  	text-transform: uppercase;	
+}
+
+.row div:hover{
+	cursor: pointer;
+	background: url("../images/look.png");	
 }
 
 .work button{
