@@ -142,7 +142,7 @@ nav ul li a:hover{
 	margin: var(--s-offset) auto;
 }
 
-/*skils*/ /*може grid?*/
+/*skils*/
 .skils{
 	display: flex;
 	justify-content: space-between;
@@ -168,19 +168,22 @@ nav ul li a:hover{
 }
 
 /*numbers*/
-.numbers{
-	text-transform: uppercase;
-	color: #fff;
-	background: #10c9c3;
-	padding-top: 16vh;
-	padding-bottom: 16vh;
-
+.counter{
 	display: flex;
 	justify-content: space-between;
+	color: var(--white);
+	background: var(--bg-green);
+	padding: var(--indet-top) 0;
+	text-transform: uppercase;
 }
 
 .numbers-projects img{
 	float: left;
+	margin-right: var(--xs-offset);
+}
+
+.numbers-projects p{
+	font-size: 1.5em;
 }
 
 /*work*/

@@ -1,4 +1,5 @@
 :root{
+	--xs-offset: 1.5em; /*18px*/
 	--s-offset: 2.5em; /*30px*/
 	--indet-top:6.66em;/*80px*/
 
