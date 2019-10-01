@@ -7,11 +7,16 @@
 		display: none;
 	}
 
+	.header-top{
+		position: relative;
+	}
+
 	.menu-mob{
 		display: block;
 		width: 31px;
 		height: 28px;
-		position: fixed;
+		/*position: fixed;*/
+		position: absolute;
 		right: 1.5em;
 		top: 1.5em;
 	}
@@ -40,5 +45,32 @@
 		width: auto;
 		text-align: center;
 	}
+
+	.row {
+
+    	grid-template-columns: repeat(2, 1fr);
+    	grid-template-rows: repeat(auto);
+	}
+
+
+
+	/*contact page*/
+	.contact{
+		display: flex;
+		justify-content: center;
+		align-items: start;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.contact-info{
+		width: 100%;
+	}
+
+	.contact form{
+		margin: var(--xs-offset) auto;
+		width: 70%;
+	}
+
 
 }

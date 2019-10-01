@@ -16,16 +16,16 @@
 					<img src="images/logo.svg" alt="Logo">
 				</div>
 
-				<nav>
+				<nav class="nav">
 					<button class="menu-mob"></button>
 					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Work</a></li>
-						<li><a href="#">Process</a></li>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">Testimonials</a></li>
-						<li><a href="#">Contact</a></li>
+						<li class="menu-elem active"><a href="home.html">Home</a></li>
+						<li class="menu-elem"><a href="about.html">About</a></li>
+						<li class="menu-elem"><a href="#">Work</a></li>
+						<li class="menu-elem"><a href="#">Process</a></li>
+						<li class="menu-elem"><a href="#">Services</a></li>
+						<li class="menu-elem"><a href="#">Testimonials</a></li>
+						<li class="menu-elem"><a href="contact.html">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -35,7 +35,23 @@
 				<div class="banner-description">
 					<h2>We Design and Develop</h2>
 					<p>We are a new design studio basen in USA. We have over 20 years of combined experience, and know a thing or two about designing websites and mobile apps.</p>
-					<button>Contact US</button>
+					<button id="popup-Btn">Contact US</button>
+					<div id="popup" class="popup">
+						<div class="popup-content">
+							<div class="popup-header">
+								<h2>Contact us</h2>
+								<span class="close">&times;</span>
+							</div>
+							<div class="popup-body">
+								<form action="" method="POST">
+									<input type="text" placeholder="Name" required>
+									<input type="email" placeholder="Email" required>
+									<button type="submit">Send</button>
+								</form>
+							</div>
+							
+						</div>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -49,7 +65,11 @@
 
 		<div class="skils">
 			<div class="skills-content">
-				<h2>Professional Skills</h2>
+				<h2>
+					Professional Skills<br>
+					Increase strips
+
+				</h2>
 
 				<p>
 					UI/UX Design 75%<br>
@@ -64,11 +84,14 @@
 					<progress id="mark-progress" value="65" max="100">
 				</p>
 			</div>
-
-			<div class="skills-image"></div>
 		</div>
 
 		<div class="counter">
+			<h2>
+				Counter<br>
+				increase number
+			</h2>
+			<div class="counter-wrap">
 			<div class="numbers-projects">
 				<img src="images/n-bag.png" alt="bag">
 				<p data-num="548" class="numbers">0</p>
@@ -89,6 +112,7 @@
 				<p data-num="548" class="numbers">0</p>
 				<h4>projects completed</h4>
 			</div>
+		</div>
 		</div>
 
 		<div class="work">
@@ -127,7 +151,10 @@
 		</div>
 
 		<div class="work_process">
-			<h3>Our Work Process</h3>
+			<h3>
+				Our Work Process<br>
+				Tabs
+			</h3>
 			<p>Divivde have don't man wherein air fourth.Own itself make have night won#t make.
 			<br> Are you under Seed appear which good give. Own give air whout fowl moveth dry first heaven fruit, dominion she'd won't very all.</p>
 
@@ -198,73 +225,65 @@
 		</div>
 
 		<div class="comment">
-			<!--<div class="slide1">
-				<blockquote>
-					"Oustandig job and exceeded all expectations. It was a plesure to work with them on a sizable first project and am looking forward to start the next one asap."
-					<p>Michael Horkins</p>
-				</blockquote>
+	 		<div class="wrap">
+				<div id="arrow-left" class="arrow"></div>
+				  <div id="slider">
+				    <div class="slide slide1">
+				      <div class="slide-content">
+				        <span>
+				        	<blockquote>
+						"Oustandig job and exceeded all expectations. It was a plesure to work with them on a sizable first project and am looking forward to start the next one asap."
+						<p>Michael Horkins</p>
+						</blockquote>
+				        </span>
+				      </div>
+				    </div>
+				    <div class="slide slide2">
+				      <div class="slide-content">
+				        <span>Image Two</span>
+				      </div>
+				    </div>
+				    <div class="slide slide3">
+				      <div class="slide-content">
+				        <span>Image Three</span>
+				      </div>
+				    </div>
+				     <div class="slide slide4">
+				      <div class="slide-content">
+				        <span>Image vier</span>
+				      </div>
+				    </div>
+				  </div>
+				<div id="arrow-right" class="arrow"></div>
 			</div>
 
-			<div class="pagination">
-				<input type="circe">
-			</div>-->
-
-			<input type="radio" name="images" id="i1" checked>
-			<input type="radio" name="images" id="i2">
-			<input type="radio" name="images" id="i3">
-
-			<div class="slide_img" id="one">
-				<img src="images/slider-adventure.jpg">
-
-				<label for="i3" class="pre"></label>
-				<label for="i2" class="nxt"></label>
 			</div>
 
-			<div class="slide_img" id="two">
-				<img src="images/slider-athletes.jpg">
-
-				<label for="i1" class="pre"></label>
-				<label for="i3" class="nxt"></label>
+			<div class="clients">
+				<img src="images/clients.png" alt="handmade">
+				<img src="images/clients.png" alt="handmade">
+				<img src="images/clients.png" alt="handmade">
+				<img src="images/clients.png" alt="handmade">
+				<img src="images/clients.png" alt="handmade">
 			</div>
 
-			<div class="slide_img" id="three">
-				<img src="images/slider-waters.jpg">
+			<div class="projects">
+				<h3>Need a Projects</h3>
+				<p>be set fouth god darkness make it wherein own</p>
+				
+				<form action="" method="POST">
+					<input type="text" placeholder="Your Name" required>
+					<input type="email" placeholder="Your Email" required>
+					<input type="text" placeholder="Your Title">
+					<textarea placeholder="Your Comment" height="100"></textarea>
 
-				<label for="i2" class="pre"></label>
-				<label for="i1" class="nxt"></label>
-			</div>
+					<button type="submit" value="submit">Send Message</button>
+				</form>
 
-			<div class="nav">
-				<label class="dots" id="dot1" for="i1"></label>
-				<label class="dots" id="dot2" for="i2"></label>
-				<label class="dots" id="dot3" for="i3"></label>
 			</div>
 		</div>
 
-		<div class="clients">
-			<img src="images/clients.png" alt="handmade">
-			<img src="images/clients.png" alt="handmade">
-			<img src="images/clients.png" alt="handmade">
-			<img src="images/clients.png" alt="handmade">
-			<img src="images/clients.png" alt="handmade">
-		</div>
-
-		<div class="projects">
-			<h3>Need a Projects</h3>
-			<p>be set fouth god darkness make it wherein own</p>
-			
-			<form>
-				<input type="text" placeholder="Your Name">
-				<input type="email" placeholder="Your Email">
-				<input type="text" placeholder="Your Title">
-				<textarea placeholder="Your Comment" height="100"></textarea>
-
-				<button>Send Message</button>
-			</form>
-
-		</div>
-
-	</div>
+		<div class="button-top">Top</div>
 
 	<footer>
 		<div>
@@ -302,8 +321,11 @@
 	</footer>
 
 	<script src="js/menu.js"></script>
+	<script src="js/popup.js"></script>
 	<script src="js/progress.js"></script>
 	<script src="js/counter.js"></script>
 	<script src="js/tab.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="js/buttonTop.js"></script>
 </body>
 </html>

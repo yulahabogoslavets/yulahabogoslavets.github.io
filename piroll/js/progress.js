@@ -11,6 +11,7 @@ function designProgress(time){
 	}, time);
 }
 
+
 designProgress(100);
 
 function webProgress(time){
