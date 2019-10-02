@@ -11,23 +11,27 @@
 <body>
 	<div class="container">
 		<header>
-			<div class="header-top">
-				<div class="logo">
-					<img src="images/logo.svg" alt="Logo">
-				</div>
+			<div class="header-wrap">
+				<div class="header-top">
+					<div class="logo">
+						<a href="one_page.html">
+							<img src="images/logo.svg" alt="Logo">
+						</a>
+					</div>
 
-				<nav class="nav">
-					<button class="menu-mob"></button>
-					<ul>
-						<li class="menu-elem active"><a href="home.html">Home</a></li>
-						<li class="menu-elem"><a href="about.html">About</a></li>
-						<li class="menu-elem"><a href="#">Work</a></li>
-						<li class="menu-elem"><a href="#">Process</a></li>
-						<li class="menu-elem"><a href="#">Services</a></li>
-						<li class="menu-elem"><a href="#">Testimonials</a></li>
-						<li class="menu-elem"><a href="contact.html">Contact</a></li>
-					</ul>
-				</nav>
+					<nav class="nav">
+						<button class="menu-mob"></button>
+						<ul>
+							<li class="menu-elem active"><a href="home.html">Home</a></li>
+							<li class="menu-elem"><a href="about.html">About</a></li>
+							<li class="menu-elem"><a href="#work">Work</a></li>
+							<li class="menu-elem"><a href="#process">Process</a></li>
+							<li class="menu-elem"><a href="#services">Services</a></li>
+							<li class="menu-elem"><a href="#clients">Clients</a></li>
+							<li class="menu-elem"><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
 			</div>
 			<div class="header-bottom">
 				<div class="banner-logo"></div>
@@ -63,7 +67,7 @@
 			<img src="images/signature.svg" alt="signature">
 		</div>
 
-		<div class="skils">
+		<div class="skils" id="process">
 			<div class="skills-content">
 				<h2>
 					Professional Skills<br>
@@ -181,7 +185,7 @@
 		</div>
 
 
-		<div class="services">
+		<div class="services" id="services">
 			<div>
 				<img src="images/s-diamond.png" alt="diamond">
 				<h3>ui/ux design</h3>
@@ -256,16 +260,15 @@
 				  </div>
 				<div id="arrow-right" class="arrow"></div>
 			</div>
+		</div>
 
-			</div>
-
-			<div class="clients">
-				<img src="images/clients.png" alt="handmade">
-				<img src="images/clients.png" alt="handmade">
-				<img src="images/clients.png" alt="handmade">
-				<img src="images/clients.png" alt="handmade">
-				<img src="images/clients.png" alt="handmade">
-			</div>
+		<div class="clients" id="clients">
+			<img src="images/clients.png" alt="handmade">
+			<img src="images/clients.png" alt="handmade">
+			<img src="images/clients.png" alt="handmade">
+			<img src="images/clients.png" alt="handmade">
+			<img src="images/clients.png" alt="handmade">
+		</div>
 
 			<div class="projects">
 				<h3>Need a Projects</h3>
@@ -327,5 +330,6 @@
 	<script src="js/tab.js"></script>
 	<script src="js/slider.js"></script>
 	<script src="js/buttonTop.js"></script>
+	<script src="js/archor.js"></script>
 </body>
 </html>
