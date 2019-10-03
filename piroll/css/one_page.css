@@ -54,13 +54,11 @@ header nav{
 	display: inline-flex;
 	align-items: center;
 }
-
 header nav ul{
 	display: inline-flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	list-style: none;
-
 }
 nav ul li{
 	margin-left: 1.2rem;
@@ -68,17 +66,15 @@ nav ul li{
 }
 nav ul li a{
 	text-decoration: none;
-	color: #000;
+	color: var(--black);
 }
 
 nav ul li a:active,
-nav ul li a:hover{
-	color: #10c9c3;
+nav ul li a:hover,
+.active a{
+	color: var(--bg-green);
 }
 
-.active a{
-	color: #10c9c3;
-}
 
 .header-bottom{
 	display: flex;
@@ -98,8 +94,8 @@ nav ul li a:hover{
 
 .banner-description h2{
 	font-size: 3.1em;
-	line-height: 48px;
-	color: #1d1d1d;
+	line-height: 2em;
+	color: var(--black);
 	font-family: "Montserrat";
 	font-weight: 500;
 }
@@ -107,7 +103,6 @@ nav ul li a:hover{
 .banner-description p{
 	padding-top: 3em;
 	padding-bottom: 3em;
-
 	font-size: 1.5em;
 	line-height: 2.3em;
 	color: var(--grey-dark);
@@ -116,16 +111,17 @@ nav ul li a:hover{
 }
 
 .banner-description button{
-	background: var(--green);
+	background: var(--bg-green);
 	color: var(--white);
 	border: none;
 	padding: 1.2em;
+	width: 50%;
 	text-transform: uppercase;
 	cursor: pointer;
 }
 
 .banner-description button:hover{
-	background: var(--green-dark);
+	background: var(--green);
 }
 
 /*pop up*/
@@ -219,7 +215,7 @@ nav ul li a:hover{
 .about h3,
 .work_process h3{
 	font-size: 2.5em;
-	color: #191919;
+	color: var(--black);
 	font-family: "Montserrat";
 	font-weight: 500;
 }
@@ -271,10 +267,7 @@ nav ul li a:hover{
 .counter-wrap{
 	display: flex;
 	justify-content: space-between;
-	margin-top: var(--s-offset);
-	
-	
-	
+	margin-top: var(--s-offset);	
 }
 
 .numbers-projects img{
@@ -290,7 +283,6 @@ nav ul li a:hover{
 .work{
 	background: var(--bg-grey);
 	padding-bottom: var(--xs-offset);
-	/*min-height: 70vh;*/
 }
 
 .work h2{
@@ -304,8 +296,7 @@ nav ul li a:hover{
 }
 
 .row div{
-
-	border-bottom: 1px solid #000;
+	border-bottom: 1px solid var(--black);
 }
 /*.row div:nth-child(2n+1){
 	background: #838383;
