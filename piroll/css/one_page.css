@@ -20,7 +20,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	background: var(--bg-grey);
+	/*background: var(--bg-grey);*/
 }
 
 .container{
@@ -29,6 +29,7 @@ body{
 
 header{
 	padding: 1.5em;
+	background: var(--bg-grey);
 }
 
 .header-top{
@@ -233,6 +234,7 @@ nav ul li a:hover,
 	justify-content: center;
 	align-items: center;
 	padding: var(--indet-top) 0;
+	background: var(--bg-grey);
 }
 
 .skills-content{
@@ -265,8 +267,9 @@ nav ul li a:hover,
 	padding: var(--indet-top) 0;
 }
 .counter-wrap{
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	text-align: left;
 	margin-top: var(--s-offset);	
 }
 
@@ -280,6 +283,10 @@ nav ul li a:hover,
 }
 
 /*work*/
+.work{
+	background: var(--bg-grey);
+	padding-bottom: var(--xs-offset);
+}
 .work h2{
 	text-align: center;
 	padding: var(--s-offset) 0;
@@ -395,6 +402,7 @@ nav ul li a:hover,
     grid-row-gap: 45px;
     padding: var(--indet-top) 0;
     cursor: pointer;
+    background: var(--bg-grey);
 }
 .services div:hover{
 	background: var(--bg-green);
@@ -453,8 +461,8 @@ nav ul li a:hover,
   text-align: center;
 }
 
-.slide-content span  {
-  font-size: 3rem;
+.slide-content span{
+  font-size: 3em;
   padding: var(--s-offset);
   color: var(--white);
 }
@@ -491,6 +499,7 @@ nav ul li a:hover,
 .clients{
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 	padding: var(--s-offset) 0;
 	background: var(--white);
 }
@@ -503,6 +512,7 @@ nav ul li a:hover,
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background: var(--bg-grey);
 }
 
 .projects h3{
@@ -593,9 +603,19 @@ footer  a{
 
 
 /*about site*/
+.menu-back::before{
+	content: "";
+	width: 30px;
+	height: 30px;
+	background: url(../images/arrow-back.svg) no-repeat;
+    top: 17px;
+    margin-left: -22px;
+    position: absolute;
+}
 .ask-me{
 	text-align: center;
-	margin: var(--indet-top) auto;
+	padding: var(--indet-top) 0;
+	background: var(--bg-grey);
 }
 
 .ask-me h2{
@@ -610,6 +630,7 @@ footer  a{
 	color: var(--white);
 	border: none;
 	padding: 1.2em 2.5em;
+	text-transform: uppercase;
 	cursor: pointer;
 }
 
@@ -644,7 +665,7 @@ footer  a{
 
 .contact-info ul li a{
 	text-decoration: none;
-	color: #000;
+	color: var(--black);
 }
 
 
@@ -661,7 +682,6 @@ footer  a{
 .projects-wrap{
 	background: var(--bg-grey);
     padding: 1.5em;
-    margin-top: var(--xs-offset);
 }
 
 #projects-work{

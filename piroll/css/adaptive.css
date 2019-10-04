@@ -8,7 +8,7 @@
 	}
 
 	.header-top{
-		position: relative;
+		/*position: relative;*/
 	}
 
 	.menu-mob{
@@ -29,7 +29,10 @@
 	}
 
 	header nav.open{
-		width: 60%;
+		width: 100%;
+		background: rgba(233,233,233, 0.5);
+		display: flex;
+		justify-content: center;
 	}
 	header nav.open ul{
 		display: flex;
@@ -40,6 +43,10 @@
 		margin-bottom: 1.2em;
 	}
 
+	.menu-back::before{
+		top: 9px;
+	}
+
 
 	.banner-description{
 		width: auto;
@@ -47,7 +54,6 @@
 	}
 
 	.row {
-
     	grid-template-columns: repeat(2, 1fr);
     	grid-template-rows: repeat(auto);
 	}
@@ -72,5 +78,50 @@
 		width: 70%;
 	}
 
+	footer{
+		flex-wrap: wrap;
+	}
+}
 
+@media screen and (max-width: 414px){
+	.header-top{
+		position: relative;
+	}
+	.banner-logo {
+    	display: none;
+    }
+    
+    .popup-body form input{
+    	width: auto;
+    }
+
+	.counter-wrap{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-row-gap: var(--xs-offset);
+	}
+	.row {
+    	grid-template-columns: repeat(1, 1fr);
+	}
+
+	.projects-content {
+    	grid-template-columns: repeat(1, 1fr);
+	}
+
+	#arrow-prev span,
+	#arrow-next span{
+		display: none;
+	}
+
+	.contact-info {
+    	padding:0 var(--s-offset);
+	}
+
+	.services {
+    	grid-template-columns: repeat(2, 1fr);
+    }
+
+    .slide-content span{
+    	font-size: 2em;
+    }
 }
