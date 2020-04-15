@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+:root{
+    --primary: #afc67b;
+    --bg-green: rgba(69,73,59,.6);
+    --text: #e8e8e8;
+    --black: #212121;
+
+    --font-cursive: 'Dancing Script', cursive;
+}
+
+
+/*btn outline*/
+a.active.focus,
+a.active:focus,
+a.focus,
+a:active.focus,
+a:active:focus,
+a:focus,
+button.active.focus,
+button.active:focus,
+button.focus,
+button:active.focus,
+button:active:focus,
+button:focus,
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus,
+input:active,
+input:hover,
+input:focus{
+    outline: 0!important;
+    outline-color: transparent!important;
+    outline-width: 0!important;
+    outline-style: none!important;
+    box-shadow: 0 0 0 0 rgba(0,123,255,0)!important;
+}
+/**/
+
+body{
+    font-size: 16px;
+    background: var(--black);
+    color: var(--text);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+h3{
+    color: var(--primary);
+    font-family: var(--font-cursive);
+}
+
+
+.home{
+    width: 100%;
+    height: 100vh;
+    color: var(--primary);
+    background: url("images/bgImage.jpg") center no-repeat;
+    background-size: cover;
+    text-transform: uppercase;
+}
+
+.home a{
+    color: var(--primary);
+}
+
+.navbar a{
+    font-size: 1.5rem;
+}
+
+.logo{
+    display: inline-block;
+    width: 160px;
+    height: 160px;
+    background: url("images/logo.svg") no-repeat;
+}
+
+.title h2{
+    font-weight: bold;
+}
+
+/**/
+.nav-link{
+    position: relative;
+    padding-bottom: 0;
+}
+.nav-link:first-child{
+    margin-right: 2rem;
+}
+.nav-link::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    background-color: var(--primary);
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 650ms;
+}
+.nav-link:hover::before{
+    transform: scaleX(1);
+}
+
+
+/**/
+.btn{
+    display: block;
+    background: var(--black);
+    border: 1px solid var(--primary);
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, .3), transparent);
+    transition: all 650ms;
+}
+.btn:hover::before{
+    left: 100%;
+}
+
+.btn a{
+    color: var(--primary);
+    text-decoration: none;
+}
+/**/
+
+/*info*/
+.bg{
+    background:url("images/Rectangle .svg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+}
+
+/*details*/
+.details{
+    color: var(--text);
+    background: var(--bg-green);
+}
+
+/*menu*/
+.menu{
+    background: var(--bg-green);
+}
+.menu-heading h2{
+    color: var(--text);
+}
+.menu img{
+    width: 100%;
+}
+
+.point-left,
+.point-right{
+    position: relative;
+}
+
+.point-right::before,
+.point-left::before{
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 15px 15px 15px 0;
+    border-color: transparent var(--primary) transparent;
+    left: -15px;
+    top: 50%;
+}
+
+.point-right::before{
+    left: 100%;
+    border-width: 15px 0 15px 15px;
+}
+
+.btn-more-detail{
+    display: none;
+}
+
+/*reviews*/
+.reviews{
+    background: var(--bg-green);
+}
+
+/*discover-menu*/
+.discover-menu{
+    background: url("images/menu-bg.jpg") no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.menu-heading h2{
+    text-transform: uppercase;
+}
+
+.our-order{
+    background: rgba(63,64,54, .9);
+    position: absolute;
+    top: 2rem;
+    left:0;
+    right: 0;
+    bottom: 2rem;
+    overflow: hidden;
+}
+
+.capture{
+    display: flex;
+    justify-content: space-between;
+}
+.capture img{
+    background: #c5c6c4;
+    padding: 0 15px;
+    margin-right: 10px;
+}
+.capture-desc h4{
+    font-family: var(--font-cursive);
+}
+.capture-desc span {
+    font-family: var(--font-cursive);
+    font-weight: bold;
+}
+
+/*book*/
+.book .input-group input,
+.book .input-group select,
+.book button{
+    padding: 5px;
+    border-radius: 5px;
+    background: transparent;
+}
+
+.book .input-group input[type="text"],
+.book .input-group input[type="email"],
+.book .input-group input:last-child{
+    width: 100%;
+}
+.btn-form{
+    color: var(--text);
+    text-transform: uppercase;
+    width: 30vw;
+}
+.btn-form:hover{
+    cursor: pointer;
+    border-color: var(--bg-green);
+}
+
+/*discover*/
+.discover{
+    background: var(--bg-green);
+}
+.discover h2{
+    text-transform: uppercase;
+}
+
+.discover .card{
+    border: none;
+    color: var(--black);
+}
+.discover .card h6{
+    font-weight: bold;
+}
+
+.discover .card-body a{
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+    border-bottom: 4px solid var(--bg-green);
+    padding-left: 0;
+}
+
+/*social-media*/
+.social blockquote{
+    color: var(--primary);
+    font-family: var(--font-cursive);
+}
+.social-group .rounded-circle {
+    color: #000000;
+    background: var(--text);
+    padding: 5px;
+}
+
+/*footer*/
+.footer{
+    background: var(--bg-green);
+}
+.footer h4{
+    text-transform: uppercase;
+}
+.footer .list{
+    padding-left: 0;
+}
+.footer .list li {
+    list-style: none;
+    text-align: left;
+}
+.footer .list li a{
+    color: var(--text);
+}
