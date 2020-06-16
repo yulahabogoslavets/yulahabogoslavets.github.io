@@ -1,2 +1,2 @@
 # yulahabogoslavets.github.io
-Here my Works with using JS, React, Bootstrap3,4.
+Here are my works with using JS, React, Bootstrap3,4.
