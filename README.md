@@ -5,5 +5,5 @@ Here are my works with using JS, React, Bootstrap3,4.
 3.  Multi-page: [hier](https://yulahabogoslavets.github.io/shop/)
 4. Bootstrap3: [hier](https://yulahabogoslavets.github.io/farel/)
 5. First big project with Bootstrap3, Jquery, JS: [hier](https://yulahabogoslavets.github.io/bino/)
-6.Variables CSS: [hier](https://yulahabogoslavets.github.io/gridzilla/index.html)
+6. Variables CSS: [hier](https://yulahabogoslavets.github.io/gridzilla/index.html)
 7. Calculator on JS: [hier](https://yulahabogoslavets.github.io/calculator-1.1/)
