@@ -335,7 +335,7 @@ nav.scroll a.active{
     width: 100px;
     height: 90px;
     transition: all 1s ease;
-    animation: scale 1s linear infinite;
+   /* animation: scale 1s linear infinite;*/
     /*cursor: zoom-in;*/
 }
 .heart::before,
@@ -366,7 +366,7 @@ nav.scroll a.active{
     }
 }
 
-/**/
+
 
 /*progress bar*/
 .about-me{
@@ -375,8 +375,15 @@ nav.scroll a.active{
 }
 .about-me h4{
     text-align: center;
-    font-style: italic;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    text-shadow:
+            1px 1px 0 var(--btn-hover),
+            1px -1px 0 orange,
+            -1px 1px 0 orange,
+            -1px -1px 0 var(--btn-hover);
+    color: var(--second-color);
+
 }
 .about-me .skills{
     position: relative;
