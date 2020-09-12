@@ -1,3 +1,8 @@
+@media screen and (max-width: 1024px){
+    .title h2{
+        font-size: 6vw;
+    }
+}
 @media screen and (max-width: 768px){
     .line{
         width: 30px;
@@ -61,5 +66,53 @@
     li.fade{
         opacity: 1;
     }
+/*w-360px*/
+    .title{
+        text-align: center;
+    }
+    .title h2{
+        font-size: 6vw;
+    }
+    .title h3{
+        font-size: 5vw;
+    }
 
+    .contact{
+        margin-left: calc(var(--indent) / 2);
+    }
+
+    .headline{
+        width: 32%;
+    }
+
+    .about-wrap{
+        margin-left: 10px;
+    }
+/**/
+}
+@media screen and (max-width: 414px){
+    .diamond::after{
+        border-width: 60px 46px 0 40px;
+    }
+}
+
+@media screen and (max-width: 376px){
+    .diamond::after{
+        border-width: 60px 42px 0 40px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .diamond::after{
+        border-width: 60px 37px 0 40px;
+    }
+    .burst::before{
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 280px){
+    .label-text{
+        margin-left: 20px;
+    }
 }
