@@ -27,7 +27,7 @@ body{
 }
 
 header{
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     background: var(--main-bg-color);
 }
@@ -139,6 +139,7 @@ nav.scroll a.active{
     font-weight: bold;
     cursor: pointer;
     margin-top: var(--indent);
+    margin-bottom: calc(var(--indent) / 2);
 }
 .btn a{
     text-decoration: none;
@@ -166,29 +167,168 @@ nav.scroll a.active{
 
 
 .contact{
+    display: flex;
+    justify-content: center;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     background: var(--bunt);
-    position: absolute;
-    bottom: var(--indent);
     margin-left: var(--indent);
 }
 .contact a{
     text-decoration: none;
     color: var(--first-color);
     font-size: 2rem;
-    margin-left: 9px;
 }
 .contact a:hover{
     color: var(--second-color);
+}
+
+/*portfolio*/
+.portfolio{
+    background: var(--bunt);
+    padding: 5vh 10px;
+}
+
+.filter-wrap{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.filter-wrap ul li{
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.3rem;
+    margin-right: 10px;
+    padding: 5px;
+}
+.filter-wrap ul li:not(:last-child):after{
+    content:'/';
+    padding-left: 5px;
+}
+
+.filter-wrap ul li:hover,
+.filter-active{
+    background: lightcoral;
+    color: #ffffff;
+}
+
+
+.hide{
+    opacity: 1;
+    animation: hide 2s forwards;
+}
+@keyframes hide {
+    to{
+        opacity: 0;
+    }
+}
+
+.row{
+    width: 90%;
+    margin: 40px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+}
+.example_pic{
+    height: 100%;
+    width: 100%;
+}
+.example_pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.box{
+    position: relative;
+    display: inline-block;
+}
+.box::after,
+.box::before{
+    content: '';
+    position: absolute;
+    opacity: 1;
+    transition: all 0.4s ease-out;
+    top: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+}
+.box::before{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: scale(0,1);
+}
+.box::after{
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    transform: scale(1, 0);
+}
+.box:hover::before{
+    background: rgba(0,0,0,1);
+    transform: scale(1.05, 1);
+}
+.box:hover::after{
+    transform: scale(1, 1.05);
+}
+.box .content{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    opacity: 0;
+    z-index: 2;
+}
+.box:hover .content{
+    opacity: 1;
+}
+.box:hover img{
+    opacity: 0.4;
+}
+
+.box .content{
+    margin: 10px;
+}
+.box .content p{
+    color: lightcoral;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+.box .content .view_more{
+    background: #04c2c9;
+    padding: 10px;
+    border-radius: 10px;
+}
+.box .content .view_more:hover{
+    background: #03ecf7;
+
+}
+
+.box .content .view_more a{
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+.box .content .view_more a:hover{
+    color: #000000;
 }
 
 /*about*/
 .about{
     padding-top: var(--indent);
     padding-bottom: var(--indent);
-    background: var(--bunt);
+    background: #b5c1e2;
 }
 .about-wrap{
     display: flex;
@@ -336,7 +476,7 @@ nav.scroll a.active{
     width: 100px;
     height: 90px;
     transition: all 1s ease;
-   /* animation: scale 1s linear infinite;*/
+    /* animation: scale 1s linear infinite;*/
     /*cursor: zoom-in;*/
 }
 .heart::before,
@@ -479,143 +619,6 @@ nav.scroll a.active{
 }
 
 /**/
-/*portfolio*/
-.portfolio{
-    background: #b5c1e2;
-    padding: 5vh 10px;
-}
-
-.filter-wrap{
-    display: flex;
-    justify-content: center;
-    margin: 20px auto;
-}
-
-.filter-wrap ul li{
-    display: inline-block;
-    cursor: pointer;
-    font-size: 1.3rem;
-    margin-right: 10px;
-    padding: 5px;
-}
-.filter-wrap ul li:not(:last-child):after{
-    content:'/';
-    padding-left: 5px;
-}
-
-.filter-wrap ul li:hover,
-.filter-active{
-    background: lightcoral;
-    color: #ffffff;
-}
-
-
-.hide{
-    opacity: 1;
-    animation: hide 2s forwards;
-}
-@keyframes hide {
-    to{
-        opacity: 0;
-    }
-}
-
-.row{
-    width: 80%;
-    margin: 40px auto;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    grid-template-rows: repeat(2, 1fr);
-}
-
-.example_pic img{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-}
-.box{
-    position: relative;
-    display: inline-block;
-}
-.box::after,
-.box::before{
-    content: '';
-    position: absolute;
-    opacity: 1;
-    transition: all 0.4s ease-out;
-    top: 1rem;
-    bottom: 1rem;
-    left: 1rem;
-    right: 1rem;
-}
-.box::before{
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-    transform: scale(0,1);
-}
-.box::after{
-    border-left: 2px solid white;
-    border-right: 2px solid white;
-    transform: scale(1, 0);
-}
-.box:hover::before{
-    background: rgba(0,0,0,1);
-    transform: scale(1.05, 1);
-}
-.box:hover::after{
-    transform: scale(1, 1.05);
-}
-.box .content{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 15px;
-    color: white;
-    opacity: 0;
-    z-index: 2;
-}
-.box:hover .content{
-    opacity: 1;
-}
-.box:hover img{
-    opacity: 0.4;
-}
-
-.box .content{
-    margin: 10px;
-}
-.box .content p{
-    color: lightcoral;
-    font-size: 1.2rem;
-    font-style: italic;
-}
-.box .content .view_more{
-    background: #04c2c9;
-    padding: 10px;
-    border-radius: 10px;
-}
-.box .content .view_more:hover{
-    background: #03ecf7;
-
-}
-
-.box .content .view_more a{
-    text-decoration: none;
-    color: #ffffff;
-    cursor: pointer;
-}
-.box .content .view_more a:hover{
-    color: #000000;
-}
-
 
 /*footer*/
     footer{
