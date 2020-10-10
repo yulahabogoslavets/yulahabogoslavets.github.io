@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>drag</title>
+    <style>
+        .wrap{
+            display: flex;
+            justify-content: space-around;
+        }
+        .draggable-elements{
+            font-size: 24px;
+        }
+        .draggable{
+            margin-bottom: 10px;
+        }
+        .droppable{
+            padding: 20px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+<div class="draggable-elements">
+    <div class="draggable" draggable="true"  id="newtext1">newtext11</div>
+    <div class="draggable" draggable="true"  id="oldtext3">oldtext3</div>
+    <div class="draggable" draggable="true"  id="newtext3">newtext3</div>
+    <div class="draggable" draggable="true"  id="oldtext2">oldtext2</div>
+    <div class="draggable" draggable="true"  id="newtext2">newtext2</div>
+    <div class="draggable" draggable="true"  id="oldtext1">oldtext1</div>
+</div>
+<div class="droppable-elements">
+    <div class="droppable" data-draggable-id="newtext1">newtext1</div>
+    <div class="droppable" data-draggable-id="oldtext3">oldtext3</div>
+    <div class="droppable" data-draggable-id="newtext3">newtext3</div>
+    <div class="droppable" data-draggable-id="oldtext2">oldtext2</div>
+    <div class="droppable" data-draggable-id="newtext2">newtext2</div>
+    <div class="droppable" data-draggable-id="oldtext1">oldtext1</div>
+</div>
+</div>
+
+<script>
+    const draggableElements = document.querySelectorAll('.draggable');
+    const droppableElements = document.querySelectorAll('.droppable');
+
+    draggableElements.forEach(elem=>{
+        elem.addEventListener('dragstart', dragstart);
+        elem.addEventListener('dragend', dragend);
+    });
+    function dragstart(event){
+        event.target.style.opacity= 0.5;
+        event.dataTransfer.setData('text', event.target.id);
+        console.log('dragstart');
+    }
+
+    function dragend(event){
+        event.target.style.opacity= "";
+        console.log('dragend');
+    }
+
+    droppableElements.forEach(elem=>{
+        elem.addEventListener('dragover', dragover);
+        elem.addEventListener('dragleave', dragleave);
+        elem.addEventListener('dragenter', dragenter);
+        elem.addEventListener('drop', drop);
+    })
+    function dragover(event){
+        event.preventDefault();
+        event.target.style.color="red";
+        console.log('dragover');
+    }
+    function dragleave(event){
+        event.target.style.color = '';
+        console.log('dragleave');
+    }
+    function dragenter(event){
+        if ( event.target.className == "droppable" ) {
+            event.target.style.border = "3px dotted red";
+        }
+        console.log('dragenter');
+    }
+    function drop(event){
+        event.preventDefault();
+        const draggableElementData = event.dataTransfer.getData('text');
+        const droppableElementData = event.target.getAttribute('data-draggable-id');
+        if(draggableElementData == droppableElementData){
+            event.target.style.backgroundColor="purple";
+            event.target.style.border = "";
+            /*event.target.insertAdjacentHTML('afterbegin', droppableElementData)*/
+            event.target.appendChild(document.getElementById(droppableElementData))
+        }
+
+        console.log('drop');
+    }
+</script>
+</body>
+</html>
