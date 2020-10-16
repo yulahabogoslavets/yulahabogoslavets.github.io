@@ -47,32 +47,36 @@
                     </div>
                 </div>
             </div>
-            <div class="showup_content">
-                <h3>Explore Educational</h3>
-                <div class="showup_content-slider">
-                    <a href="#" class="card card_1 card-active">
-                        <div class="card_controls">
-                            <div class="card_controls-count">01</div>
-                            <div class="card_controls-arrow">
-                                <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path opacity="1" d="M12.9846 0.965391C12.8032 1.03765 12.6848 1.20628 12.6848 1.39341L12.6848 6.46942H0.555501C0.287685 6.46942 0.0703125 6.67696 0.0703125 6.93266L0.0703125 14.3443C0.0703125 14.6 0.287685 14.8075 0.555501 14.8075H12.6849V19.903C12.6849 20.0901 12.8033 20.2587 12.9837 20.331C13.1652 20.4023 13.3738 20.3634 13.5126 20.2309L23.2238 10.9896C23.315 10.9025 23.3665 10.7848 23.3665 10.6616C23.3665 10.5384 23.315 10.4207 23.2248 10.3337L13.5135 1.06545C13.3747 0.932949 13.1661 0.893127 12.9846 0.965391Z" fill="#fff"/>
-                                </svg>
-                            </div>
+            <div class="slider">
+                <div class="slider-items">
+                    <div class="item active">
+                        <img src="img/card/img1.jpg" alt="img1">
+                        <div class="caption">
+                            Slide 1
                         </div>
-                        <div class="card_title">titlelll</div>
-                    </a>
-                    <a href="#" class="card card_2">
-                        <div class="card_controls">
-                            <div class="card_controls-count">02</div>
-                            <div class="card_controls-arrow">
-                                <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path opacity="1" d="M12.9846 0.965391C12.8032 1.03765 12.6848 1.20628 12.6848 1.39341L12.6848 6.46942H0.555501C0.287685 6.46942 0.0703125 6.67696 0.0703125 6.93266L0.0703125 14.3443C0.0703125 14.6 0.287685 14.8075 0.555501 14.8075H12.6849V19.903C12.6849 20.0901 12.8033 20.2587 12.9837 20.331C13.1652 20.4023 13.3738 20.3634 13.5126 20.2309L23.2238 10.9896C23.315 10.9025 23.3665 10.7848 23.3665 10.6616C23.3665 10.5384 23.315 10.4207 23.2248 10.3337L13.5135 1.06545C13.3747 0.932949 13.1661 0.893127 12.9846 0.965391Z" fill="#fff"/>
-                                </svg>
-                            </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/card/img2.jpg" alt="img2">
+                        <div class="caption">
+                            Slide 2
                         </div>
-                        <div class="card_title">titlelll</div>
-                    </a>
+                    </div>
+                    <div class="item">
+                        <img src="img/card/img3.jpg" alt="img3">
+                        <div class="caption">
+                            Slide 3
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/card/img4.jpg" alt="img4">
+                        <div class="caption">
+                            Slide 4
+                        </div>
+                    </div>
                 </div>
+                    <!--navigation-->
+                    <div class="left-slide"><</div>
+                    <div class="right-slide">></div>
             </div>
 
         </div>
@@ -155,6 +159,7 @@
     <section id="contact">
         <div class="sidecontrol">
             <div class="sidecontrol_controls">
+
                 <a class="next-arrow" href="#start_section">
                     <img src="img/icon-next.svg" alt="next">
                 </a>
@@ -228,8 +233,20 @@
         </div>
     </section>
 
+    <div class="overlay">
+        <div class="video">
+           <!-- <iframe autoplay="1" id="frame" width="100%" height="100%" src="none"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+            </iframe>-->
+            <div id="frame"></div>
+            <div class="close">&times;</div>
+        </div>
+    </div>
+
+
     <script src="js/animation-scroll.js"></script>
 <script src="js/drop&drog.js"></script>
-
+<script src="js/modules/videoPlayer.js"></script>
+<script src="js/slider.js"></script>
 </body>
 </html>

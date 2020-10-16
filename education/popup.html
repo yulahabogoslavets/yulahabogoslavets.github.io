@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>popup</title>
+</head>
+<style>
+.popup{
+    display: none;
+    border: 2px solid #000000;
+    font-size: 1.2rem;
+    font-style: italic;
+    padding: 10px;
+    position: absolute;
+    bottom: 0vh;
+
+    animation: showBottom 2s ease-in-out;
+}
+@keyframes showBottom {
+    0%{transform: translateY(100%);}
+    100%{transform: translateY(0%);}
+}
+.popup.active{
+    display: flex;
+}
+</style>
+<body>
+<div class="popup">
+    <p>Click on me</p>
+</div>
+
+<script>
+    const popupBlock = document.querySelector('.popup');
+    const block = document.querySelectorAll('.next-arrow');
+
+    window.addEventListener('DOMContentLoaded', () => {
+        block.forEach(item=> {
+            item.addEventListener('click', ()=>{
+                if(popupBlock.classList.contains('active')){
+                    popupBlock.classList.remove('active');
+                    console.log('remove')
+                } else{
+                    hideLoadingDiv();
+                    console.log('addd')
+                }
+
+            })
+
+        })
+
+
+        function hideLoadingDiv() {
+            setTimeout(function(){
+                popupBlock.classList.add('active');
+            },2000)
+        }
+
+        hideLoadingDiv();
+    })
+</script>
+</body>
+</html>
